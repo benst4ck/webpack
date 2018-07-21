@@ -1,6 +1,7 @@
 ## 不使用webpack配置文件的情况下 初探webpack
 
-webpack是一个基于node的项目 
+webpack是一个基于node的项目 它是现代JS应用程序的静态模块打包器 它减少了html页面所引入文件的数量
+
 首先全局安装webpack
 
 	npm install webpack -g
