@@ -6,7 +6,7 @@ module.exports = {
   entry: ["./entry.js"],  
   // 告诉webpack在哪里(path)输出它所创建的bundles 以及如何命名(filename)这些文件
   output: {
-    path: __dirname,  // __dirname表示webpack.config.js配置文件所在的目录
+    path: __dirname,  // __dirname表示webpack.config.js配置文件所在的目录的绝对路径
     filename: "bundle.js"
   },
   module: {

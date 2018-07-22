@@ -1,0 +1,19 @@
+{
+  "name": "wp3",
+  "version": "1.0.0",
+  "description": "如果在index.html中直接引入parent.js文件则会报错 因为当前的浏览器还不支持ES6的import和export语法",
+  "main": "child.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.24.1",
+    "babel-loader": "^7.0.0",
+    "babel-preset-es2015": "^6.24.1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
