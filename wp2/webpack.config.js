@@ -17,9 +17,9 @@ module.exports = {
       { 
       	test: /\.css$/, 
       	use: [
-      		{ loader: 'style-loader' },
+      	  { loader: 'style-loader' },
           { loader: 'css-loader' }
-      	]
+      	]  // 这里也可以写成 use: [ 'style-loader', 'css-loader' ]
       }
     ]
   },
