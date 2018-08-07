@@ -1,9 +1,10 @@
 ## 在webpack中将打包的代码分离到不同的bundle中 按需加载
 
-在index.js文件中引入两个.css文件
+在index.js文件中引入三个.css文件
 
 	import './home.css';
 	import './home2.css';
+	import './home3.css';
 
 最终CSS和JS代码会打包在一起 这样将无法利用浏览器的异步和并行加载CSS的能力 网页必须等待 直到整个JS包下载完成 然后重绘网页
 
