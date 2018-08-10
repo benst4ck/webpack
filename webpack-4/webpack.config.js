@@ -3,12 +3,14 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 
 module.exports = {
-	mode: "none",
+  // 设置为生产模式(production) 将bundle切换到压缩输出
+	mode: "none", 
 
   // 当多个文件打包到一个bundle中时 如果其中一个文件的某个地方出错 那么控制台报错时只会简单的指出错误发生在bundle中的位置 如果使用了source map 则会具体指出错误发生在源文件中的位置
   devtool: 'inline-source-map',
 
   // 告知 webpack-dev-server 在localhost:8080下建立服务 将dist目录下的文件 作为可访问文件
+  // 项目中的文件处于被检测状态 一旦有文件内容改变 浏览器就会自动更新
   devServer: {
     contentBase: './dist'
   },

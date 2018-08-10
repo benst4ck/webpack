@@ -33,3 +33,5 @@ webpack命令 默认选择使用webpack.config.js配置文件 所以 "--config w
 对于package.json文件中的start脚本 只需要运行命令
 
 	npm start
+
+这个项目中包含了 tree shaking 的尝试 但是[好像没有什么用](https://segmentfault.com/a/1190000012794598)

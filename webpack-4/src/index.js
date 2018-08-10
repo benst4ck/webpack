@@ -1,6 +1,7 @@
 import _ from 'lodash'
 import printMsg from './print.js'
 import './style.css'
+import { cube } from './math.js'
 
 // ---------------------------
 
@@ -46,3 +47,10 @@ document.body.appendChild(component());
 
 // ---------------------------
 
+var element2 = document.createElement('pre');
+element2.innerHTML = [
+  'Hey~ man',
+  '5 cubed is equal to ' + cube(5)
+].join('\n\n');
+
+document.body.appendChild(element2);

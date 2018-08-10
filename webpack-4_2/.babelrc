@@ -1,0 +1,12 @@
+{
+  "presets": [
+    "es2015"  // 指定通过babel-loader 将.js为后缀的文件都编译为ES5语法 然后打包 这样index.html引用bundle.js文件时 浏览器就能成功解析
+  ],
+  "plugins": [],
+
+  "env": {  // 这里避免了一个warning([BABEL] Note: The code generator has deoptimised) ...
+    "development" : {
+      "compact": false
+    }
+  }
+}
