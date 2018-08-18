@@ -6,7 +6,7 @@
 
 	 npm i -D webpack-merge
 
-删掉 webpack.config.js
+删掉之前的webpack.config.js
 
 添加 
 
