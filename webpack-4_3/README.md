@@ -25,3 +25,20 @@ print.js在没有点击按钮时 已经被打包到dist目录下
 在加载index.html页面时 index.html页面中并没有引入dist目录下的print模块对应的bundle 
 
 当点击按钮时 查看控制台的Network 这时print模块对应的bundle才被下载
+
+在webpack打包的提示信息中
+ 	
+	Entrypoint app = common.[hash].js app.[hash].js
+	Entrypoint another = common.[hash].js another.[hash].js
+
+可以看出 
+
+	app: './src/index.js'
+
+index.js文件中的代码 被拆分打包到了 common.[hash].js 和 app.[hash].js 这两个bundle中
+
+	another: './src/another-module.js'
+
+another-module.js文件中的代码 被拆分打包到了common.[hash].js 和 another.[hash].js 这两个bundle中
+
+实际上 index.js和another-module.js文件的公共依赖是lodash模块 而lodash模块被提取打包到common.[hash].js中 从而减少了代码量
