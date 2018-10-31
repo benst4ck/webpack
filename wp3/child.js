@@ -2,6 +2,6 @@
 
 export var n = 1208;
 export function sayHello(name) {
-  var person = name || 'stranger'
+  var person = name || 'stranger'  // 如果调用sayHello函数时没有出入name参数 那么就将 "stranger" 字符串传递给person变量
   console.log(`hello ${person}`)
 }
